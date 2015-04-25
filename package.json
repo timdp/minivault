@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.12.3",
     "express": "^4.12.3",
-    "minivault-core": "0.0.2",
+    "minivault-core": "0.0.3",
     "morgan": "^1.5.2"
   }
 }

@@ -42,7 +42,7 @@ var onXhrResponse = function(xhr, cb) {
 };
 
 var request = function(verb, secret, id, data, cb) {
-  var uri = '/api/entries/' + id;
+  var uri = '/api/entries' + (id.length ? '/' + id : '');
   var xhr = new XMLHttpRequest();
   xhr.open(verb, uri, true);
   xhr.onreadystatechange = function() {
