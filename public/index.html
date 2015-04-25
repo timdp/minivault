@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Minivault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Minivault</h1>
+  </header>
+  <section class="authentication">
+    <h2>Vault Authentication</h2>
+    <p>
+      <label for="inp-secret">Secret:</label>
+      <input type="password" id="inp-secret" placeholder="Enter your vault secret">
+    </p>
+  </section>
+  <section class="retrieve">
+    <h2>Retrieve Data from Vault</h2>
+    <p>
+      <label for="inp-retrieve-id">ID:</label>
+      <input type="text" id="inp-retrieve-id" placeholder="Enter an ID">
+    </p>
+    <p>
+      <textarea id="ta-retrieve-data" readonly></textarea>
+    </p>
+    <p>
+      <input type="button" id="btn-retrieve" value="Retrieve from Vault" disabled>
+    </p>
+  </section>
+  <section class="store">
+    <h2>Store Data in Vault</h2>
+    <p>
+      <label for="inp-store-id">ID:</label>
+      <input type="text" id="inp-store-id" placeholder="Enter an ID">
+    </p>
+    <p>
+      <textarea id="ta-store-data" placeholder="Enter JSON data"></textarea>
+    </p>
+    <p>
+      <input type="button" id="btn-store" value="Store in Vault" disabled>
+    </p>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>

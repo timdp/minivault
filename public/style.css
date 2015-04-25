@@ -1,0 +1,13 @@
+body, input, textarea {
+  font-family: sans-serif;
+  font-size: large;
+}
+
+input[type="text"], input[type="password"] {
+  width: 25ex;
+}
+
+textarea {
+  width: 50ex;
+  height: 5em;
+}

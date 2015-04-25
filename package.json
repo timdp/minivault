@@ -1,0 +1,17 @@
+{
+  "name": "minivault",
+  "version": "0.0.1",
+  "description": "A pretty rudimentary vault.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Tim De Pauw <hi@tmdpw.eu> (https://tmdpw.eu/)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "minivault-core": "0.0.1",
+    "morgan": "^1.5.2"
+  }
+}
