@@ -11,6 +11,10 @@ var dom = {
     id: document.getElementById('inp-store-id'),
     data: document.getElementById('ta-store-data'),
     button: document.getElementById('btn-store'),
+  },
+  remove: {
+    id: document.getElementById('inp-remove-id'),
+    button: document.getElementById('btn-remove')
   }
 };
 
@@ -37,18 +41,17 @@ var onXhrResponse = function(xhr, cb) {
   }
 };
 
-var request = function(secret, id, data, cb) {
-  var store = (data !== null);
+var request = function(verb, secret, id, data, cb) {
   var uri = '/api/entries/' + id;
   var xhr = new XMLHttpRequest();
-  xhr.open(store ? 'PUT' : 'GET', uri, true);
+  xhr.open(verb, uri, true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
       onXhrResponse(xhr, cb);
     }
   };
   xhr.setRequestHeader('X-Secret', secret);
-  if (store) {
+  if (verb === 'PUT') {
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify(data));
   } else {
@@ -69,7 +72,7 @@ dom.retrieve.id.addEventListener('keypress', onDataChange);
 dom.retrieve.button.addEventListener('click', function() {
   dom.retrieve.id.readonly = true;
   dom.retrieve.button.disabled = true;
-  request(getSecret(), dom.retrieve.id.value, null, function(err, data) {
+  request('GET', getSecret(), dom.retrieve.id.value, null, function(err, data) {
     if (err) {
       alert('ERROR: ' + err.message);
     } else {
@@ -91,7 +94,7 @@ dom.store.button.addEventListener('click', function() {
   dom.store.id.readonly = true;
   dom.store.data.readonly = true;
   dom.store.button.disabled = true;
-  request(getSecret(), dom.store.id.value, data, function(err, data) {
+  request('PUT', getSecret(), dom.store.id.value, data, function(err, data) {
     if (err) {
       alert('ERROR: ' + err.message);
     } else {
@@ -103,7 +106,22 @@ dom.store.button.addEventListener('click', function() {
   });
 });
 
-dom.retrieve.button.disabled = false;
-dom.store.button.disabled = false;
+dom.remove.button.addEventListener('click', function() {
+  dom.remove.id.readonly = true;
+  dom.remove.button.disabled = true;
+  request('DELETE', getSecret(), dom.remove.id.value, null, function(err, data) {
+    if (err) {
+      alert('ERROR: ' + err.message);
+    } else {
+      alert('Successfully removed!')
+    }
+    dom.remove.id.readonly = false;
+    dom.remove.button.disabled = false;
+  });
+});
+
+dom.retrieve.button.disabled =
+  dom.store.button.disabled =
+  dom.remove.button.disabled = false;
 
 })();

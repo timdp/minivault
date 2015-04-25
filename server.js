@@ -40,6 +40,18 @@ router.route('/entries/:id')
       }, function(err) {
         res.status(500).json({error: err.message});
       });
+  })
+  .delete(function(req, res) {
+    req.vault.delete(req.params.id)
+      .then(function() {
+        res.json({success: true});
+      }, function(err) {
+        if (err.code === 'ENOENT') {
+          res.sendStatus(404);
+        } else {
+          res.status(500).json({error: err.message});
+        }
+      });
   });
 
 app.use('/api', router);
