@@ -34,7 +34,7 @@ var onXhrResponse = function(xhr, cb) {
     }
   } else {
     if (bodyError || !body.error) {
-      cb(new Error('HTTP ' + xhr.status), null)
+      cb(new Error('HTTP ' + xhr.status), null);
     } else {
       cb(new Error(body.error), null);
     }
