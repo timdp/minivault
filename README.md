@@ -1,5 +1,4 @@
-Minivault
-=========
+# Minivault [![npm](https://img.shields.io/npm/v/minivault.svg)](https://www.npmjs.com/package/minivault)
 
 A pretty rudimentary vault. Keeps a key-value store under `~/.minivault`,
 encrypted with a password.
@@ -10,20 +9,17 @@ You may also be interested in the
 and the
 [RESTful API](https://www.npmjs.com/package/minivault-rest).
 
-Usage
------
+## Usage
 
 1. One-time setup: run `npm install`.
 2. Run `npm start` to start the daemon.
 3. Browse to [localhost:3000](http://localhost:3000/).
 
-Author
-------
+## Author
 
 [Tim De Pauw](https://tmdpw.eu/)
 
-License
--------
+## License
 
 Copyright &copy; 2015 Tim De Pauw
 
