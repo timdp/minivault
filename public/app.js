@@ -70,6 +70,7 @@ dom.retrieve.id.addEventListener('change', onDataChange);
 dom.retrieve.id.addEventListener('keypress', onDataChange);
 
 dom.retrieve.button.addEventListener('click', function() {
+  dom.retrieve.data.value = '';
   dom.retrieve.id.readonly = true;
   dom.retrieve.button.disabled = true;
   request('GET', getSecret(), dom.retrieve.id.value, null, function(err, data) {

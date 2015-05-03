@@ -2,16 +2,39 @@
   "name": "minivault",
   "version": "0.1.0",
   "description": "A pretty rudimentary vault.",
+  "keywords": [
+    "vault",
+    "secret",
+    "encrypt",
+    "encryption",
+    "password"
+  ],
+  "author": "Tim De Pauw <hi@tmdpw.eu> (https://tmdpw.eu/)",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "minivault-rest": "^0.2.0"
+  },
   "main": "index.js",
+  "files": [
+    "index.js",
+    "server.js"
+  ],
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Tim De Pauw <hi@tmdpw.eu> (https://tmdpw.eu/)",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.12.3",
-    "express": "^4.12.3",
-    "minivault-core": "0.1.0",
-    "morgan": "^1.5.2"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timdp/minivault"
+  },
+  "bugs": {
+    "url": "https://github.com/timdp/minivault/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/timdp/minivault/master/LICENSE"
+    }
+  ]
 }
