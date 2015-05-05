@@ -1,4 +1,6 @@
 (function (global) {
+  'use strict'
+
   var dom = {
     secret: document.getElementById('inp-secret'),
     retrieve: {

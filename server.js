@@ -1,3 +1,5 @@
+'use strict'
+
 var express = require('./node_modules/minivault-rest/node_modules/express')
 var morgan = require('./node_modules/minivault-rest/node_modules/morgan')
 var bodyParser = require('./node_modules/minivault-rest/node_modules/body-parser')
