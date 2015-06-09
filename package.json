@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "babel-runtime": "^5.5.4",
-    "minivault-rest": "^0.3.0"
+    "minivault-rest": "^0.3.0",
+    "open": "0.0.5"
   },
   "devDependencies": {
     "del": "^1.2.0",
@@ -28,10 +29,10 @@
   "main": "dist/index.js",
   "files": [
     "index.js",
-    "dist/server.js"
+    "dist/app.js"
   ],
   "scripts": {
-    "start": "node dist/server.js"
+    "start": "node dist/app.js"
   },
   "repository": {
     "type": "git",

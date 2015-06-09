@@ -2,6 +2,10 @@
 
 var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
 
+var _open = require('open');
+
+var _open2 = _interopRequireDefault(_open);
+
 var _node_modulesMinivaultRestNode_modulesExpress = require('../node_modules/minivault-rest/node_modules/express/');
 
 var _node_modulesMinivaultRestNode_modulesExpress2 = _interopRequireDefault(_node_modulesMinivaultRestNode_modulesExpress);
@@ -32,3 +36,5 @@ app.use(_node_modulesMinivaultRestNode_modulesExpress2['default']['static'](_pat
 app.listen(PORT, function () {
   return console.info('Listening on port %d', PORT);
 });
+
+(0, _open2['default'])('http://localhost:' + PORT);

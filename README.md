@@ -9,11 +9,22 @@ You may also be interested in the
 and the
 [RESTful API](https://www.npmjs.com/package/minivault-rest).
 
+## Installation
+
+```bash
+npm install
+```
+
 ## Usage
 
-1. One-time setup: run `npm install`.
-2. Run `npm start` to start the daemon.
-3. Browse to [localhost:3000](http://localhost:3000/).
+```bash
+npm start
+```
+
+## Troubleshooting
+
+If `npm start` doesn't open up your default Web browser, try browsing to
+[localhost:3000](http://localhost:3000/) manually instead.
 
 ## Author
 
