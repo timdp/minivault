@@ -14,15 +14,24 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "minivault-rest": "^0.2.0"
+    "babel-runtime": "^5.5.4",
+    "minivault-rest": "^0.3.0"
   },
-  "main": "index.js",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "mkdirp": "^0.5.1"
+  },
+  "main": "dist/index.js",
   "files": [
     "index.js",
-    "server.js"
+    "dist/server.js"
   ],
   "scripts": {
-    "start": "node server.js"
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
