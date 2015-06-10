@@ -41,10 +41,5 @@
   "bugs": {
     "url": "https://github.com/timdp/minivault/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.githubusercontent.com/timdp/minivault/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }
