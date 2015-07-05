@@ -1,9 +1,9 @@
 'use strict'
 
 import open from 'open'
-import express from '../node_modules/minivault-rest/node_modules/express/'
-import morgan from '../node_modules/minivault-rest/node_modules/morgan/'
-import bodyParser from '../node_modules/minivault-rest/node_modules/body-parser/'
+import express from 'express'
+import morgan from 'morgan'
+import bodyParser from 'body-parser'
 import router from 'minivault-rest'
 import path from 'path'
 
