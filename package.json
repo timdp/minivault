@@ -18,7 +18,7 @@
     "body-parser": "^1.12.3",
     "express": "^4.12.3",
     "minivault-core": "^0.3.1",
-    "minivault-rest": "^0.3.0",
+    "minivault-rest": "^0.4.0",
     "morgan": "^1.5.2",
     "open": "0.0.5"
   },
