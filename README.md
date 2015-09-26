@@ -25,8 +25,8 @@ npm start
 
 ## Troubleshooting
 
-If `npm start` doesn't open up your default Web browser, try browsing to
-[localhost:3000](http://localhost:3000/) manually instead.
+If `npm start` doesn't open up your default Web browser, try manually browsing
+to the URL that `npm start` logs to the console.
 
 ## Author
 
