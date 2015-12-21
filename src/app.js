@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 'use strict'
 
 import open from 'open'
