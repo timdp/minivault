@@ -1,6 +1,6 @@
 # Minivault
 
-[![npm](https://img.shields.io/npm/v/minivault.svg)](https://www.npmjs.com/package/minivault) [![Dependencies](https://img.shields.io/david/timdp/minivault.svg)](https://david-dm.org/timdp/minivault) [![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
+[![npm](https://img.shields.io/npm/v/minivault.svg)](https://www.npmjs.com/package/minivault) [![Dependencies](https://img.shields.io/david/timdp/minivault.svg)](https://david-dm.org/timdp/minivault) [![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 A pretty rudimentary vault. Keeps a key-value store under `~/.minivault`,
 encrypted with a password.
