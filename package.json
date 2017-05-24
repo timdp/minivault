@@ -19,7 +19,7 @@
     "express": "^4.12.3",
     "minivault-core": "^1.0.1",
     "minivault-rest": "^1.0.1",
-    "morgan": "^1.5.2",
+    "morgan": "^1.8.2",
     "open": "0.0.5"
   },
   "devDependencies": {
