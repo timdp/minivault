@@ -20,7 +20,7 @@
     "minivault-core": "^1.0.1",
     "minivault-rest": "^1.0.1",
     "morgan": "^1.5.2",
-    "open": "0.0.5"
+    "open": "7.0.4"
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.15.0",
